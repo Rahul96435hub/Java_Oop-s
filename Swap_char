@@ -1,0 +1,25 @@
+class Test
+{
+public static void main(String[] args)
+{
+String x = "A B C d e f";
+StringBuilder sb = new StringBuilder();
+for(char c : sb.toCharArray())
+{
+if(Character.isUpperCase(c))
+{
+sb.append(Character.toLowerCase(c));
+}
+else if(Character.isLowerCase(c))
+{
+sb.append(Character.toUpperCase(c));
+}
+else
+{
+sb.append(c);
+}
+}
+System.out.println(x);
+System.out.println(sb.toString());
+}
+}
